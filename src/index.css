@@ -1,13 +1,49 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root{
+  --text-color: #1E1E1E;
+  --background-color: #D8DCE8;
+  --black-color:#000000;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'swizer-regular';
+  box-sizing: border-box;
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
+
+
+@font-face {
+  font-family: 'swizer-medium';
+  src: url('./assets/fonts/Switzer-Medium.ttf');
+}
+
+@font-face {
+  font-family: 'swizer-regular';
+  src: url('./assets/fonts/Switzer-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'swizer-semi-bold';
+  src: url('./assets/fonts/Switzer-Semibold.ttf');
+}
+
+h1{
+  font-family: 'swizer-medium';
+}
+
+h2{
+  font-family: 'swizer-semi-bold';
+}
+
+p{
+  font-family: 'swizer-regular';
+}
+
+a{
+  text-decoration: none;
+  font-family: 'swizer-regular';
+  color: var(--text-color);
 }
